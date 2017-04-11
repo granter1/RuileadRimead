@@ -12,12 +12,13 @@ public class UI extends JFrame {
 		Button.loadButton();
 		mainPanel = new JPanel();
 		//default size of our window and its layout:
-		setPreferredSize(new Dimension(1000, 1000));
+		setPreferredSize(new Dimension(750, 750));
+		setExtendedState(JFrame.MAXIMIZED_BOTH); 
 		getContentPane().setLayout(new GridLayout());
 		mainPanel.add(Game.getGame());
 		mainPanel.add(Button.getButton());
 		getContentPane().add(mainPanel);
-		setTitle("Test");
+		setTitle("Rúiléad Rimead");
 		pack();
 		setVisible(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
